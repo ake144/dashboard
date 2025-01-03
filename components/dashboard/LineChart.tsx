@@ -78,7 +78,7 @@ export default function ImprovedCustomLineChart() {
             <Loader2 className="h-8 w-8 animate-spin text-primary" />
           </div>
         ) : (
-          <div className="flex flex-col md:flex-row items-start justify-between gap-6">
+          <div className="flex flex-col md:flex-row items-start justify-between gap-9">
             <div className="flex-1">
               <ResponsiveContainer width="100%" height={300}>
                 <LineChart data={data}>
@@ -103,7 +103,7 @@ export default function ImprovedCustomLineChart() {
                 <p className="text-2xl font-bold">{totalPrograms}</p>
                 <p className="text-sm">Overall Programs</p>
               </div>
-              <div className="grid grid-cols-1 gap-3">
+              <div className="grid grid-cols-1 ml-4 gap-3">
                 {Object.entries(counts).map(([key, value], index) => (
                   <div key={key} className="flex items-center justify-between">
                     <div className="flex items-center">
